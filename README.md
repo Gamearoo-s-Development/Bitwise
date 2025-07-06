@@ -27,33 +27,35 @@ npm install
 
 ### 3. Setup Environment Variables
 
-Copy the example environment file to create your working `.env`:
+Copy the example `.env` file to a real one:
 
-```bash
-cp .env.example .env
-```
+- **Linux/macOS:**
+  ```bash
+  cp .env.example .env
+  ```
 
-Then open the new `.env` file and fill in the required values:
+- **Windows (Command Prompt):**
+  ```cmd
+  copy .env.example .env
+  ```
 
-```env
-DISCORD_TOKEN=your-bot-token
-CLIENT_ID=your-client-id
-MONGO_URI=your-mongodb-uri
-PORT=4080
-```
+- **Windows (PowerShell):**
+  ```powershell
+  Copy-Item .env.example .env
+  ```
 
 ⚠️ Do **not** commit your `.env` file! It contains sensitive credentials.
 
 ## 🧪 Running the Bot
 
 ```bash
-npm start
+npm run dev
 ```
 
-Or use `nodemon` for live reload during development:
+Or use `node` for live reload during development:
 
 ```bash
-npx nodemon index.js
+node index.js
 ```
 
 ## 📂 Project Structure
