@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "better-date.js": "^2.0.0",
+    "dbd-soft-ui": "^1.0.12",
+    "discord-dashboard": "^2.3.62",
+    "discord-helper.js": "^6.1.0",
+    "discord.js": "^14.21.0",
+    "dotenv": "^17.0.1",
+    "ram-api.js": "^15.0.3"
+  },
+  "name": "bitwise",
+  "version": "1.0.0",
+  "description": "**Bitwise** is a modular, efficient, and server-friendly Discord bot designed to handle moderation, logging, automation, and general server utilities. Built for stability and flexibility, Bitwise is your all-in-one toolkit for managing Discord communities.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "deploy": "node handlers/deploy-commands.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gamearoo-s-Development/Bitwise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gamearoo-s-Development/Bitwise/issues"
+  },
+  "homepage": "https://github.com/Gamearoo-s-Development/Bitwise#readme"
+}

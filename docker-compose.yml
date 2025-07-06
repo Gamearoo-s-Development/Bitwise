@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./logs:/app/logs
+      - ./bots.json:/app/bots.json
+    env_file:
+      - .env
+    restart: unless-stopped  

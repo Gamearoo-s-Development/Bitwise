@@ -23,6 +23,7 @@ cd bitwise-bot
 
 ```bash
 npm install
+
 ```
 
 ### 3. Setup Environment Variables
@@ -49,26 +50,36 @@ Copy the example `.env` file to a real one:
 ## 🧪 Running the Bot
 
 ```bash
-npm run dev
+npm run start
+
 ```
 
-Or use `node` for live reload during development:
+Or use this for live reload during development using nodemon (npm i -g nodemon):
 
 ```bash
-node index.js
+npm run dev
+
 ```
+
+or use the provided docker-compose.yml
 
 ## 📂 Project Structure
 
 ```
 .
-├── commands/        # Command files
-├── events/          # Event listeners
-├── utils/           # Utility functions
-├── .env             # Your bot’s secrets (do NOT share)
-├── .env.example     # Example environment file
-├── index.js         # Bot entry point
-└── package.json     # Project metadata and dependencies
+├── commands
+├── docker-compose.yml
+├── Dockerfile
+├── handlers
+├── index.js
+├── LICENSE
+├── node_modules
+├── package.json
+├── package-lock.json
+├── README.md
+└── start.sh
+
+4 directories, 8 files
 ```
 
 ## 📄 License
